@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import '~normalize.css/normalize.css';
+
+.head {
+    
+    margin-top: 15px;
+    background: #474955;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+    margin-left: 78px;
+    margin-top: 23px;
+    position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body-form {
+    height: 820px;
+    width: 1232px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.finder {
+    height: 52px;
+    width: 631px;
+    border-radius: 0px;
+    background: #5A5C66;
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.finder-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.finder-box input {
+    width: 80%;
+    height: 19px;
+    position: relative;
+    background: #5A5C66;
+    padding-left: 26px;
+    padding-top: 18px;
+    color: #B2B7BF;
+}
+
+
+.finder-box button {
+
+    height: 21px;
+    width: 20.8px;
+    position: absolute;
+    top: 15px;
+    right: 24px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.finder-box button::before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    background-color: white;
+}
+
+.table {
+    margin-top: 15px;
+	border: 1px solid #E3E6EC;
+	border-collapse: collapse; 
+}
+
+.table th {
+    height: 54px;
+    background: #474955;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.table td {
+	border: 1px solid #E3E6EC;
+    font-size: 13px;
+	padding: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;   
+    color: #474955;
+    margin-left: 119px;
+    margin-right: 119px;
+}
+
+.footer-nav {
+    font-size: 24px;    
+}
+
+.footer-center {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.asc:before{
+	content: ' \25BC';
+}
+
+.asc:after{
+	content: ' \25B2';
 }
